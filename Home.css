@@ -1,6 +1,5 @@
 *#up-line{
     background-color: powderblue;
-    margin-top: -1em;
 }
 *#tipo-scuola{
     color: #808080;
@@ -23,4 +22,35 @@
 *#certiquality{
     float: right;
     margin-top: 10px;
+}
+*#blocco{
+    background-color: #f2f2f2;
+    margin-top: 1em;
+    padding:15px;
+}
+*#Title-row-1{
+    color: #3377BB;
+    font-size: 18px;
+}
+*#pon-immagine{
+    float: center;
+    width: 260px;
+}
+*#plessi{
+    color: rgb(0, 136, 204);
+    font-size: 12px;
+    margin-top: -0.9em;
+}
+*#indirizzi{
+    color: #0088CC;
+    font-size: 14px;
+    margin-top: -0.9em;
+}
+*#Fine-pagina{
+    margin-top: -0.8em;
+    font-size: 11px; 
+    text-align: center;
+    margin: 15px;
+    color: #B2B2B2;
+    line-height: 0.5;
 }
