@@ -1,0 +1,26 @@
+*#up-line{
+    background-color: powderblue;
+    margin-top: -1em;
+}
+*#tipo-scuola{
+    color: #808080;
+    font-size: 20px;
+}
+*#nome-scuola{
+    font-size: 28px; 
+    margin-top: -0.8em;
+    color: black;
+}
+*#dati-scuola {
+    margin-top: -1em;
+    font-size: 13px; 
+    color: #808080;
+}
+*#logo-repubblica{
+    float: left; 
+    margin-top: 17px;
+}
+*#certiquality{
+    float: right;
+    margin-top: 10px;
+}
