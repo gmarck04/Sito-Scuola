@@ -28,13 +28,30 @@
     margin-top: 1em;
     padding:15px;
 }
-*#Title-row-1{
+h1{
+    color: #3377BB;
+    font-size: 24px;
+}
+h2{
+    color: #3377BB;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+}
+h3{
     color: #3377BB;
     font-size: 18px;
+    margin: 0 0 15px 0;
 }
-*#pon-immagine{
+*#blog{
+    padding:15px;
+}
+*#testo{
+    color: #444444;
+    font-size: 12px;
+    margin: 15px 0;
+}
+*#immagine{
     float: center;
-    width: 260px;
 }
 *#plessi{
     color: rgb(0, 136, 204);
@@ -46,11 +63,17 @@
     font-size: 14px;
     margin-top: -0.9em;
 }
+*#Risorse{
+    color: rgb(0, 136, 204);
+    font-size: 12px;
+    margin-top: 0.5em;
+}
 *#Fine-pagina{
-    margin-top: -0.8em;
+    margin-top: 1em;
     font-size: 11px; 
     text-align: center;
-    margin: 15px;
     color: #B2B2B2;
-    line-height: 0.5;
+}
+a{
+    text-decoration:none;
 }
