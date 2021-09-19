@@ -90,8 +90,22 @@ h3{
     margin-top: 1em;
     font-size: 11px; 
     text-align: center;
-    color: #B2B2B2;
+    background-color: powderblue;
 }
 a{
     text-decoration:none;
+}
+#google-maps {
+    position: relative;
+    padding-bottom: 100%; /* Definisco l'aspect ratio */
+    height: 100;
+    overflow: hidden;
+}
+
+#google-maps > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }

@@ -11,9 +11,51 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="Home.css">
     <title>IIS Viola Marchesini Rovigo</title>
+    <link rel="icon" href="logo.ico">
+
+    <div class="modal fade" tabindex="-1" id="cookieModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Benvenuto nel sito ufficiale <br> dell'I.I.S.
+                        Viola-Marchesini!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al
+                    funzionamento ed
+                    utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a
+                    tutti o ad
+                    alcuni cookie, consulta la <a href="https://www.iubenda.com/privacy-policy/13286193/cookie-policy">
+                        cookie
+                        policy</a>.
+                    Chiudendo questo banner acconsenti all’uso dei cookie.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accetta e
+                        chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <!-- Script banner-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cookieModal').modal('show');
+        });
+    </script>
+
 </head>
 
 <body>
+
+
     <div class="desktop-only">
         <div class="container-fluid">
             <div class="row" id="up-line">
@@ -49,7 +91,7 @@
             </div>
         </div>
     </div>
-    
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="home.html">Home</a>
@@ -67,9 +109,49 @@
                             La scuola
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Albo Online (fino A.S 2015-2016)</a></li>
-                            <li><a class="dropdown-item" href="#">Calendario scolastico</a></li>
-                            <li><a class="dropdown-item" href="#">Cenni storici</a></li>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/cenni-storici">Cenni
+                                storici</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/albo-online-fino-a-s-2015-2016">Albo
+                                Online (fino
+                                A.S. 2015-2016)</a>
+                            <a class="dropdown-item"
+                                href="https://bur.regione.veneto.it/BurvServices/pubblica/DettaglioDgr.aspx?id=425130"
+                                target=”_blank”>Calendario Scolastico 2020-2021</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/genitori/libri-di-testo">Libri di
+                                testo</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/coordinate-bancarie">Coordinate
+                                bancarie</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/consiglio-di-istituto">Consiglio
+                                di istituto</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/monitoraggio-attivita-scolastiche">Monitoraggio
+                                attività scolastiche</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/orario-a-s-2020-2021">Orario
+                                A.S. 2020-2021</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/organigramma">Organigramma</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/piano-annuale-delle-attivita-a-s-2020-2021">Piano
+                                Annuale delle Attività<br> A.S. 2020-2021</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/politica-della-qualita">Politica
+                                della
+                                qualità</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/ptof-2019-2022">PTOF
+                                2019-2022</a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/pcto-percorsi-per-le-competenze-trasversali-e-l-orientamento">PCTO
+                                - Percorsi per le Competenze<br> Trasversali e Orientamento </a>
+                            <a class="dropdown-item"
+                                href="https://www.iisviolamarchesini.edu.it/j2/la-scuola/rapporto-di-autovalutazione-2020-2021">Rapporto
+                                di Autovalutazione 2021-2021</a>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -78,8 +160,8 @@
                             Genitori
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Modulistica</a></li>
-                            <li><a class="dropdown-item" href="#">Libri di testo</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/genitori/modulistica">Modulistica</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/genitori/libri-di-testo">Libri di testo</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -88,8 +170,8 @@
                             Studenti
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Riforma</a></li>
-                            <li><a class="dropdown-item" href="#">Modulistica</a></li>
+                            <li><a class="dropdown-item" href="http://archivio.pubblica.istruzione.it/riforma_superiori/nuovesuperiori/index.html">Riforma</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/studenti/modulistica">Modulistica</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -98,9 +180,13 @@
                             Docenti
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Modulistica</a></li>
-                            <li><a class="dropdown-item" href="#">Orario 2021</a></li>
-                            <li><a class="dropdown-item" href="#">Didattica a distanza</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/docenti/modulistica">Modulistica</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/docenti/orario-2021">Orario 2021</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/docenti/didattica-a-distanza">Didattica a distanza</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/docenti/com-docenti">Comunicazioni</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/docenti/verbali-e-materiale-cdd">Verbali e Materie CdC</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/docenti/comitato-di-valutazione">Comitato di valutazione</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/docenti/bes-info">BES Info</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -109,16 +195,17 @@
                             Personale ATA
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Modulistica ATA</a></li>
-                            <li><a class="dropdown-item" href="#">Amministrazione</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/j2/personale-ata/modulistica-ata">Modulistica ATA</a></li>
+                            <li><a class="dropdown-item" href="https://www.iisviolamarchesini.edu.it/piani/login.php?menu=5">Amministrazione</a></li>
                         </ul>
                     </li>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="https://www.iisviolamarchesini.edu.it/j2/en">
                         <img src="Bandiera.png" alt="" width="30" height="24">
                     </a>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                <form class="d-flex" action="https://www.iisviolamarchesini.edu.it/j2/component/search/?searchword=">
+                    <input id="campoRicerca" name="searchword" class="form-control me-2" type="search"
+                        placeholder="Cerca" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Cerca</button>
                 </form>
             </div>
@@ -131,34 +218,34 @@
                 <div class="col-md-3">
                     <div class="col-12" id="blocco">
                         <h3>Plessi</h3>
-                        <p id="plessi"><a href="#">I.I.S. "Viola-Marchesini"</a></p>
-                        <p id="plessi"><a href="#">ITA "O. Munerati"</a></p>
-                        <p id="plessi"><a href="#">ITG "A. Bernini"</a></p>
+                        <p id="plessi"><a href="home.html">I.I.S. "Viola-Marchesini"</a></p>
+                        <p id="plessi"><a href="http://www.agrariorovigo.it">ITA "O. Munerati"</a></p>
+                        <p id="plessi"><a href="http://www.itsgberninirovigo.it">ITG "A. Bernini"</a></p>
                     </div>
                     <div class="col-12" id="blocco">
                         <h3>Indirizzi di studio Settore Tecnico Tecnologico</h3>
-                        <p id="indirizzi"><a href="#">Biennio comune</a></p>
-                        <p id="indirizzi"><a href="#">Chimica, Materiali e Biotecnologie</a></p>
-                        <p id="indirizzi"><a href="#">Elettronica ed Elettrotecnica</a></p>
-                        <p id="indirizzi"><a href="#">Informatica e Telecomunicazioni</a></p>
-                        <p id="indirizzi"><a href="#">Meccanica, Meccatronica ed Energia</a></p>
-                        <p id="indirizzi"><a href="#">Sistema Moda</a></p>
-                        <p id="indirizzi"><a href="#">Istruzione degli Adulti</a></p>
-                        <p id="indirizzi"><a href="#">Agraria, Agroalimentare e Agroindustria (sede Munerati)</a></p>
-                        <p id="indirizzi"><a href="#">Costruzioni, Ambiente e Territorio (sede Bernini)</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/10-biennio-comune">Biennio comune</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/11-chimica-materiali-e-biotecnologie">Chimica, Materiali e Biotecnologie</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/12-elettronica-ed-elettrotecnica">Elettronica ed Elettrotecnica</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/13-informatica-e-telecomunicazioni">Informatica e Telecomunicazioni</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/14-meccanica-meccatronica-ed-energia">Meccanica, Meccatronica ed Energia</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/61-sistema-moda">Sistema Moda</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/92-corso-serale">Istruzione degli Adulti</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/140-agraria-agroalimentare-e-agroindustria">Agraria, Agroalimentare e Agroindustria (sede Munerati)</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/141-costruzioni-ambiente-e-territorio">Costruzioni, Ambiente e Territorio (sede Bernini)</a></p>
                     </div>
                     <div class="col-12" id="blocco">
                         <h3>Indirizzi di studio Settore Professionale</h3>
-                        <p id="indirizzi"><a href="#">Apparati, impianti e servizi tecnici industriali e civili</a></p>
-                        <p id="indirizzi"><a href="#">Manutenzione mezzi di trasporto</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/23-indirizzi-di-studio/indirizzi-di-studio-ipsia/75-apparati-impianti-e-servizi-tecnici-industriali-e-civili">Apparati, impianti e servizi tecnici industriali e civili</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/23-indirizzi-di-studio/indirizzi-di-studio-ipsia/76-manutenzione-mezzi-di-trasporto">Manutenzione mezzi di trasporto</a></p>
                     </div>
                     <div class="col-12" id="blocco">
                         <h3>PON FSE Studenti</h3>
                         <div id="blocco-immagine">
-                            <a href="#">
+                            <a href="https://sites.google.com/view/fse-v-m/home">
                                 <img src="pon_studenti.png" id="immagine" alt="">
                             </a>
-                        </div>  
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -168,43 +255,254 @@
                     </div>
                     <div class="col-12" id="blog">
                         <h2>In evidenza</h2>
+                        <!--<h3>Avviso grafici degli studenti passati lo scorso anno scolastico</h3>
+                        <a href="Grafici.html" target="_blank">Consulta i grafici</a>!-->
                         <h3>Avviso pubblico aperto/invito rivolto alle agenzie di assicurazione</h3>
-                        <p id="testo">Avviso pubblico aperto/invito, alla presentazione di offerte rivolto alle agenzie di
+                        <p id="testo">Avviso pubblico aperto/invito, alla presentazione di offerte rivolto alle agenzie
+                            di
                             assicurazione per <strong>delle offerte per l’affidamento del servizio di assicurazione in
-                                favore degli alunni e del personale scolastico per gli anni 2021/2022, 2022/2023, 2023/2024,
+                                favore degli alunni e del personale scolastico per gli anni 2021/2022, 2022/2023,
+                                2023/2024,
                                 con decorrenza dalle 00.00 del 01/09/2021 alle 24.00 del 31/08/2024.</strong></p>
+                        <h3>Orario provvisorio dal 20/09/2021</h3>
+                        <p><strong>Si pubblica l'orario in vigore dal 20/09/2021 dalle ore 8,00 alle ore 12,00
+                            </strong>(pausa didattica dalle 9,50 alle 10,10.)<br /> <a
+                                href="/j2/docs/2021-2022/Provvisorio20092021/index.html" target="_blank">Consulta
+                                l'orario ITI, ITG e IPIA<br /></a><a
+                                href="/j2/docs/2021-2022/OrarioProvvisorioITA/index.html" target="_blank">Consulta
+                                l'orario ITA</a><br /><br /> <a href="/j2/docs/2021-2022/comunicazioneOrario.pdf"
+                                target="">Visualizza comunicazione ITI, ITG e IPIA</a><br /> <a
+                                href="/j2/docs/2021-2022/comunicazioneOrarioITA.pdf" target="">Visualizza comunicazione
+                                ITA</a></p>
+                        <h3>Libri Digitali</h3>
+                        <p>Per gli studenti con diagnosi DSA, interessati ai libri scolastici in formato digitale, è
+                            attivo il servizio <strong>"LibroAID"</strong> relativo all'anno scolastico 2021/2022.
+                            Attraverso LibroAID,<strong> i libri scolastici in formato digitale (file pdf aperti)
+                                vengono erogati agli studenti con diagnosi DSA o certificazione 104/1992</strong>,
+                            grazie al protocollo siglato con l'Associazione Italiana Editori (AIE) e alla collaborazione
+                            degli editori aderenti al servizio.<br /><a href="/j2/docs/2021-2022/LibroAID_2021-2022.pdf"
+                                target="_blank">Per maggiori informazioni scarica l'allegato</a></p>
+                        <h3><span style="color: #ff0000;">Misure urgenti per fronteggiare l'emergenza da COVID-19 in
+                                ambito scolastico, della formazione superiore e socio sanitario-assistenziale</span>
+                        </h3>
+                        <p>Come previsto dal Decreto Legge n.122 del 10 settembre 2021, entrato in vigore in data
+                            11/09/2021, fino al 31 dicembre 2021, termine di cessazione dello stato di emergenza, al
+                            fine di tutelare la salute pubblica, <strong>chiunque accede alle strutture delle
+                                istituzioni scolastiche deve possedere ed è tenuto a esibire la certificazione verde
+                                COVID-19 (Green Pass).</strong></p>
+                        <h3><span style="color: #ff0000;">Protocollo misure contenimento diffusione Covid-19 e
+                                informazione sulla sicurezza</span></h3>
+                        <p>Si pubblicano:</p>
+                        <ul>
+                            <li><a href="/j2/docs/2021-2022/Sicurezza/protocollo_rev2_Covid19_2021-2022.pdf"
+                                    target="_blank">Protocollo misure di contenimento per la diffusione del Covid-19</a>
+                            </li>
+                            <li><a href="/j2/docs/2021-2022/Sicurezza/estratto_Protocollo_anti_Covid_studenti_famiglie.pdf"
+                                    target="_blank">Estratto del Protocollo per studenti e famiglie</a></li>
+                            <li><a href="/j2/docs/2021-2022/Sicurezza/autodichiarazione_Covid-19_2021-2022.pdf"
+                                    target="_blank">Modello di autodichiarazione per il personale esterno alla
+                                    scuola</a></li>
+                            <li><a href="/j2/docs/2021-2022/Sicurezza/informazione_sicurezza_art36_DLgs_81-2008.pdf"
+                                    target="_blank">Informazione sulla sicurezza ai sensi dell'art.36 Decreto Lgs.
+                                    81/2008</a></li>
+                        </ul>
+                        <h3>Orario provvisorio dal 13/09/2021</h3>
+                        <p><strong>Si pubblica l'orario in vigore dal 13/09/2021 dalle ore 8,00 alle ore
+                                12,00.</strong><br /> <a href="/j2/docs/2021-2022/OrarioProvvisorio/index.html"
+                                target="_blank">Consulta l'orario ITI, ITG e IPIA<br /></a><a
+                                href="/j2/docs/2021-2022/OrarioProvvisorioITA/index.html" target="_blank">Consulta
+                                l'orario ITA</a></p>
+                        <h3>Orario dal 13 settembre 2021 plesso ITI "F. Viola"</h3>
+                        <p>Si comunica che il <strong>13 settembre le lezioni inizieranno alle ore 8.00 e termineranno
+                                alle ore 12.00 per le Classi Seconde, Terze, Quarte, Quinte dell'ITI.</strong><br />
+                            Tale orario resterà in vigore per tutta la prima settimana di scuola.<br /> <strong>La pausa
+                                didattica si svolgerà dalle 9.50 alle 10.10</strong>. Già dal 13 settembre sarà
+                            disponibile la vendita di alimenti per la merenda.</p>
+                        <p><strong>Gli studenti delle classi prime dell'ITI il 13 settembre entreranno alle ore
+                                9,00</strong>, dovranno accedere ai luoghi di ritrovo, come indicato nella comunicazione
+                            allegata, solo 5 minuti prima dell'orario indicato, muniti di mascherina e rispettando le
+                            distanze di sicurezza.<br /> Gli studenti-tutor autorizzati accompagneranno le Classi nelle
+                            rispettive Aule.<br /> <strong>Per la settimana dal 14 al 18 settembre le lezioni
+                                inizieranno alle ore 8 e termineranno alle ore 12.00.</strong><br /> <a
+                                href="/j2/docs/2021-2022/orario_prime_13092021.pdf" target="_blank">Visualizza la
+                                comunicazione per le classi prime</a><br /> <a
+                                href="/j2/docs/2021-2022/orario_iti_13092021.pdf" target="_blank">Visualizza la
+                                comunicazione per le classi seconde, terze, quarte e quinte</a></p>
+                        <h3>Orario dal 13 settembre 2021 plesso ITA "O. Munerati"</h3>
+                        <p>Si comunica che, nella <strong>settimana dal 13 al 18 settembre le lezioni si terranno dalle
+                                ore 8,00 alle ore 12,00</strong>. Il primo giorno di lezione <strong>tutte le classi
+                                entreranno alle ore 8,00 tranne le classi prime che entreranno in maniera scaglionata
+                                secondo la scansione indicata in allegato</strong>.<br /> <a
+                                href="/j2/docs/2021-2022/orario_ita_13092021.pdf" target="_blank">Visualizza la
+                                comunicazione per le classi ITA</a></p>
+                        <h3>Orario dal 13 settembre 2021 plesso IPIA "G. Marchesini" e ITG "A. Bernini"</h3>
+                        <p><strong>Si comunica che il 13 settembre le lezioni inizieranno alle ore 8.00 e termineranno
+                                alle ore 12.00 per le Classi Seconde, Terze, Quarte, Quinte dell’IPIA e ITG</strong>.
+                            Gli alunni di tutte le classi dovranno raggiungere la propria aula/laboratorio utilizzando
+                            gli ingressi riportati nell'allegato.<br /> <strong>Gli studenti delle classi prime
+                                dell'IPIA e ITG il 13 settembre entreranno all'orario indicato nella comunicazione
+                                allegata.</strong><br /> <a href="/j2/docs/2021-2022/orario_prime_ip-itg_13092021.pdf"
+                                target="_blank">Visualizza la comunicazione per le classi prime IPIA e ITG</a><br /> <a
+                                href="/j2/docs/2021-2022/orario_ip-itg_13092021.pdf" target="_blank">Visualizza la
+                                comunicazione per le classi seconde, terze, quarte e quinte IPIA e ITG</a></p>
+                        <h3>Elenco alunni classi prime e terze AS 2021-2022</h3>
+                        <p>Si pubblicano gli elenchi delle studentesse e degli studenti delle <strong>classi prime e
+                                terze di tutti i plessi</strong> per l'A.S. 2021-2022<br /><a
+                                href="/j2/docs/2021-2022/classi_prime_as_2021-2022.pdf" target="_blank">Elenchi classi
+                                prime</a><br /> <a href="/j2/docs/2021-2022/classi_terze_as_2021-2022.pdf"
+                                target="_blank">Elenchi classi terze</a></p>
+                        <h3>Corso serale Istruzione degli Adulti A.S. 2021-2022</h3>
+                        <p>Si comunica che presso il nostro Istituto <strong>è possibile iscriversi ai corsi per adulti
+                                IdA di secondo livello</strong> finalizzati al conseguimento del diploma di istruzione
+                            tecnica per l’A.S. 2021/2022, inoltrando la domanda di iscrizione on-line.<br />Ci si può
+                            iscrivere al:</p>
+                        <ul>
+                            <li><strong>primo periodo didattico</strong>: primo e secondo anno (Biennio comune)</li>
+                            <li><strong>secondo periodo didattico</strong>: terzo e quarto anno (Meccanica, Informatica
+                                e Sistema Moda)</li>
+                            <li><strong>terzo periodo didattico</strong>: quinto anno (Meccanica, Informatica e Sistema
+                                Moda)</li>
+                        </ul>
+                        <p><a href="/j2/docs/2020-2021/serale/iscrizioni_corso_serale_2021-2022.pdf" target="_blank">Per
+                                maggiori informazioni scarica l'allegato</a><br /><a
+                                href="https://forms.gle/oXbtsXByGkGe4ink9" target="_blank">Modulo di iscrizione
+                                online<br /></a><a href="/j2/docs/2021-2022/locandina_ida.pdf" target="_blank">Scarica
+                                la locandina 1</a><br /> <a href="/j2/docs/2021-2022/locandina_ida.png"
+                                target="_blank">Scarica la locandina 2</a></p>
+                        <h3>Collegio dei Docenti</h3>
+                        <p>Il Collegio dei Docenti dell’IIS “Viola-Marchesini” è convocato in modalità <strong>a
+                                distanza mercoledì 8 settembre 2021 alle ore 9.30</strong></p>
+                        <h3>Calendario esami integrativi A.S. 2021-2022</h3>
+                        <p>Si pubblica il calendario degli esami integrativi per passaggi da altri istituti.<br /> <a
+                                href="/j2/docs/2021-2022/calendario_esami_integrativi.pdf" target="_blank">Scarica
+                                l'allegato</a></p>
+                        <h3>Elenchi classi A.S 2021-2022</h3>
+                        <p>GLi elenchi delle classi per l'A.S. 2021-2022 <strong>saranno pubblicati a partire da
+                                settembre.</strong></p>
+                        <h3>Differimento data apertura buste dell’avviso pubblico aperto/invito rivolto alle agenzie di
+                            assicurazione</h3>
+                        <p><strong>Differimento data apertura buste</strong> dell’avviso pubblico aperto/invito, alla
+                            presentazione di offerte rivolto alle agenzie di assicurazione per presentazione delle
+                            offerte per l’affidamento del servizio di<strong> assicurazione in favore degli alunni e del
+                                personale scolastico.</strong><br /> <a
+                                href="https://drive.google.com/drive/folders/1FjZu9Cqa222hLJIylh0B8xns0-7u1jnz?usp=sharing"
+                                target="_blank">Vedi comunicazione</a></p>
+                        <h3>Avviso pubblico aperto/invito rivolto alle agenzie di assicurazione</h3>
+                        <p>Avviso pubblico aperto/invito, alla presentazione di offerte rivolto alle agenzie di
+                            assicurazione per <strong>presentazione delle offerte per l’affidamento del servizio di
+                                assicurazione in favore degli alunni e del personale scolastico per gli anni 2021/2022,
+                                2022/2023, 2023/2024, con decorrenza dalle 00.00 del 01/09/2021 alle 24.00 del
+                                31/08/2024</strong>. <br /> <a
+                                href="https://drive.google.com/drive/folders/1FjZu9Cqa222hLJIylh0B8xns0-7u1jnz?usp=sharing"
+                                target="_blank">Scarica l'avviso e gli allegati</a></p>
+                        <h3>Perfezionamento Iscrizioni Classi Prime A.S. 2021-2022</h3>
+                        <p>Sono pubblicate le indicazioni per <strong>perfezionare l'iscrizione alle classi prime per
+                                l'A.S. 2021-2022.<br />Nota: </strong>a causa del cambio dell'ISTITUTO CASSIERE  i
+                            pagamenti del contributo volontario con PAGO IN RETE per le CLASSI PRIME A.S. 2021-2022
+                            potranno essere effettuati dall'11 Luglio.</p>
+                        <p><a href="/j2/docs/2021-2022/perfezionamento_iscrizioni.pdf" target="_blank">Scarica la
+                                comunicazione</a><br /> <a href="/j2/docs/2021-2022/manuale_pagamenti_scolastici.pdf"
+                                target="_blank">Scarica il manuale utenti pagamenti scolastici Pago in Rete</a></p>
+                        <h3>Libri di testo A.S. 2021-2022</h3>
+                        <p>Sono pubblicati i <strong>libri di testo per l'A.S. 2021-2022</strong> per tutti i quattro
+                            plessi.<br /><a href="/j2/genitori/libri-di-testo">Scarica la lista dei libri di testo
+                                2021-2022</a> </p>
                     </div>
                 </div>
+
+                
                 <div class="col-md-3">
                     <div class="col-12" id="blocco">
                         <h3>PON 2014-2020</h3>
                         <div id="blocco-immagine">
-                            <a href="#">
+                            <a href="https://www.iisviolamarchesini.edu.it/j2/component/content/article/2-non-categorizzato/175-pon-2014-2020">
                                 <img src="logo_nuovo_pon.png" id="immagine" alt="">
                             </a>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="col-12" id="blocco">
                         <p>
                             <a href="#">
                                 Protocollo e documentazione misure di sicurezza Concorso docenti STEM
                                 <br>
-                                <div id="blocco-immagine">
+                                <div id="blocco-immagine" href="https://www.iisviolamarchesini.edu.it/j2/component/content/article/29-concorsi/180-sicurezza-e-covid">
                                     <img src="facial_mask.png" id="immagine" alt="">
-                                </div> 
-                            </a>                            
+                                </div>
+                            </a>
                         </p>
                     </div>
+                    <div class="col-12" id="blocco">
+                        <h3>La Scuola Online</h3>
+                        <div id="blocco-immagine">
+                            <a href="https://web.spaggiari.eu/home/app/default/login.php?custcode=ROIT0003">
+                                <img src="classeviva.jpg" id="immagine" alt="">
+                            </a>
+                        </div>
+                        <div id="blocco-immagine">
+                            <p></p>
+                            <a href="https://web.spaggiari.eu/sdg/app/default/albo_pretorio.php?sede_codice=ROIT0003&referer=http://www.iisviolamarchesini.gov.it/j2/">
+                                <img src="albo_online.png" id="immagine" alt="">
+                            </a>
+                        </div>
+                        <div id="blocco-immagine">
+                            <p></p>
+                            <a href="https://web.spaggiari.eu/sdg/app/default/trasparenza.php?sede_codice=ROIT0003&referer=http://www.iisviolamarchesini.gov.it/j2">
+                                <img src="trasparenza.png" id="immagine" alt="">
+                            </a>
+                        </div>
+                        <div id="blocco-immagine">
+                            <p></p>
+                            <a href="https://web.spaggiari.eu/sdg/app/default/comunicati.php?sede_codice=ROIT0003&referer=http://www.iisviolamarchesini.gov.it/j2/">
+                                <img src="comunicati.png" id="immagine" alt="">
+                            </a>
+                        </div>
+                        <div id="blocco-immagine">
+                            <p></p>
+                            <a href="https://web.spaggiari.eu/home/app/default/login.php?target=sct">
+                                <img src="set.png" id="immagine" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12" id="blocco">
+                        <div id="blocco-immagine">
+                            <a href="https://www.iisviolamarchesini.edu.it/j2/component/content/article/2-non-categorizzato/173-educazione-civica">
+                                <img src="edcivica.jpg" id="immagine" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12" id="blocco">
+                        <div id="blocco-immagine">
+                            <a href="https://www.iisviolamarchesini.edu.it/mod/">
+                                <img src="moodle_2.png" id="immagine" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12" id="blocco">
+                        <div id="blocco-immagine">
+                            <a href="https://www.iisviolamarchesini.edu.it/j2/component/content/article/2-non-categorizzato/176-bionet">
+                                <img src="bionet.png" id="immagine" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12" id="blocco">
+                        <div class="google-maps" id="blocco-immagine">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.208896723236!2d11.794339015757462!3d45.0815568669144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477efa0be28ee4c1%3A0xecf32eb2f6aaa7c7!2sI.T.I.S.%20Ferruccio%20Viola!5e0!3m2!1sit!2sit!4v1630749156600!5m2!1sit!2sit"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>                
                 </div>
             </div>
             <div class="row">
                 <div id="Fine-pagina">
-                    <br>IIS VIOLA-MARCHESINI Via A. De Gasperi, 21 Rovigo - Centralino Tel. 
-                    <a href="tel:0425410699">0425/410699</a> 
+                    <br>IIS VIOLA-MARCHESINI Via A. De Gasperi, 21 Rovigo - Centralino Tel.
+                    <a href="tel:0425410699">0425/410699</a>
                     Fax
                     <a href="fax:0425/35277">0425/35277</a></br>
                     <p>Email: <a href="mailto:rois012001@istruzione.it">rois012001@istruzione.it</a> Posta Elettronica
-                    Certificata <a href="mailto:rois012001@pec.istruzione.it">rois012001@pec.istruzione.it</a></p>
+                        Certificata <a href="mailto:rois012001@pec.istruzione.it">rois012001@pec.istruzione.it</a></p>
                     <p><a href="#">Dichiarazione di accessibilità</a></p>
                 </div>
             </div>
@@ -222,43 +520,188 @@
                     <div class="col-12" id="blog">
                         <h2>In evidenza</h2>
                         <h3>Avviso pubblico aperto/invito rivolto alle agenzie di assicurazione</h3>
-                        <p id="testo">Avviso pubblico aperto/invito, alla presentazione di offerte rivolto alle agenzie di
+                        <p id="testo">Avviso pubblico aperto/invito, alla presentazione di offerte rivolto alle agenzie
+                            di
                             assicurazione per <strong>delle offerte per l’affidamento del servizio di assicurazione in
-                                favore degli alunni e del personale scolastico per gli anni 2021/2022, 2022/2023, 2023/2024,
+                                favore degli alunni e del personale scolastico per gli anni 2021/2022, 2022/2023,
+                                2023/2024,
                                 con decorrenza dalle 00.00 del 01/09/2021 alle 24.00 del 31/08/2024.</strong></p>
+                        <h3>Orario provvisorio dal 20/09/2021</h3>
+                        <p><strong>Si pubblica l'orario in vigore dal 20/09/2021 dalle ore 8,00 alle ore 12,00
+                            </strong>(pausa didattica dalle 9,50 alle 10,10.)<br /> <a
+                                href="/j2/docs/2021-2022/Provvisorio20092021/index.html" target="_blank">Consulta
+                                l'orario ITI, ITG e IPIA<br /></a><a
+                                href="/j2/docs/2021-2022/OrarioProvvisorioITA/index.html" target="_blank">Consulta
+                                l'orario ITA</a><br /><br /> <a href="/j2/docs/2021-2022/comunicazioneOrario.pdf"
+                                target="">Visualizza comunicazione ITI, ITG e IPIA</a><br /> <a
+                                href="/j2/docs/2021-2022/comunicazioneOrarioITA.pdf" target="">Visualizza comunicazione
+                                ITA</a></p>
+                        <h3>Libri Digitali</h3>
+                        <p>Per gli studenti con diagnosi DSA, interessati ai libri scolastici in formato digitale, è
+                            attivo il servizio <strong>"LibroAID"</strong> relativo all'anno scolastico 2021/2022.
+                            Attraverso LibroAID,<strong> i libri scolastici in formato digitale (file pdf aperti)
+                                vengono erogati agli studenti con diagnosi DSA o certificazione 104/1992</strong>,
+                            grazie al protocollo siglato con l'Associazione Italiana Editori (AIE) e alla collaborazione
+                            degli editori aderenti al servizio.<br /><a href="/j2/docs/2021-2022/LibroAID_2021-2022.pdf"
+                                target="_blank">Per maggiori informazioni scarica l'allegato</a></p>
+                        <h3><span style="color: #ff0000;">Misure urgenti per fronteggiare l'emergenza da COVID-19 in
+                                ambito scolastico, della formazione superiore e socio sanitario-assistenziale</span>
+                        </h3>
+                        <p>Come previsto dal Decreto Legge n.122 del 10 settembre 2021, entrato in vigore in data
+                            11/09/2021, fino al 31 dicembre 2021, termine di cessazione dello stato di emergenza, al
+                            fine di tutelare la salute pubblica, <strong>chiunque accede alle strutture delle
+                                istituzioni scolastiche deve possedere ed è tenuto a esibire la certificazione verde
+                                COVID-19 (Green Pass).</strong></p>
+                        <h3><span style="color: #ff0000;">Protocollo misure contenimento diffusione Covid-19 e
+                                informazione sulla sicurezza</span></h3>
+                        <p>Si pubblicano:</p>
+                        <ul>
+                            <li><a href="/j2/docs/2021-2022/Sicurezza/protocollo_rev2_Covid19_2021-2022.pdf"
+                                    target="_blank">Protocollo misure di contenimento per la diffusione del Covid-19</a>
+                            </li>
+                            <li><a href="/j2/docs/2021-2022/Sicurezza/estratto_Protocollo_anti_Covid_studenti_famiglie.pdf"
+                                    target="_blank">Estratto del Protocollo per studenti e famiglie</a></li>
+                            <li><a href="/j2/docs/2021-2022/Sicurezza/autodichiarazione_Covid-19_2021-2022.pdf"
+                                    target="_blank">Modello di autodichiarazione per il personale esterno alla
+                                    scuola</a></li>
+                            <li><a href="/j2/docs/2021-2022/Sicurezza/informazione_sicurezza_art36_DLgs_81-2008.pdf"
+                                    target="_blank">Informazione sulla sicurezza ai sensi dell'art.36 Decreto Lgs.
+                                    81/2008</a></li>
+                        </ul>
+                        <h3>Orario provvisorio dal 13/09/2021</h3>
+                        <p><strong>Si pubblica l'orario in vigore dal 13/09/2021 dalle ore 8,00 alle ore
+                                12,00.</strong><br /> <a href="/j2/docs/2021-2022/OrarioProvvisorio/index.html"
+                                target="_blank">Consulta l'orario ITI, ITG e IPIA<br /></a><a
+                                href="/j2/docs/2021-2022/OrarioProvvisorioITA/index.html" target="_blank">Consulta
+                                l'orario ITA</a></p>
+                        <h3>Orario dal 13 settembre 2021 plesso ITI "F. Viola"</h3>
+                        <p>Si comunica che il <strong>13 settembre le lezioni inizieranno alle ore 8.00 e termineranno
+                                alle ore 12.00 per le Classi Seconde, Terze, Quarte, Quinte dell'ITI.</strong><br />
+                            Tale orario resterà in vigore per tutta la prima settimana di scuola.<br /> <strong>La pausa
+                                didattica si svolgerà dalle 9.50 alle 10.10</strong>. Già dal 13 settembre sarà
+                            disponibile la vendita di alimenti per la merenda.</p>
+                        <p><strong>Gli studenti delle classi prime dell'ITI il 13 settembre entreranno alle ore
+                                9,00</strong>, dovranno accedere ai luoghi di ritrovo, come indicato nella comunicazione
+                            allegata, solo 5 minuti prima dell'orario indicato, muniti di mascherina e rispettando le
+                            distanze di sicurezza.<br /> Gli studenti-tutor autorizzati accompagneranno le Classi nelle
+                            rispettive Aule.<br /> <strong>Per la settimana dal 14 al 18 settembre le lezioni
+                                inizieranno alle ore 8 e termineranno alle ore 12.00.</strong><br /> <a
+                                href="/j2/docs/2021-2022/orario_prime_13092021.pdf" target="_blank">Visualizza la
+                                comunicazione per le classi prime</a><br /> <a
+                                href="/j2/docs/2021-2022/orario_iti_13092021.pdf" target="_blank">Visualizza la
+                                comunicazione per le classi seconde, terze, quarte e quinte</a></p>
+                        <h3>Orario dal 13 settembre 2021 plesso ITA "O. Munerati"</h3>
+                        <p>Si comunica che, nella <strong>settimana dal 13 al 18 settembre le lezioni si terranno dalle
+                                ore 8,00 alle ore 12,00</strong>. Il primo giorno di lezione <strong>tutte le classi
+                                entreranno alle ore 8,00 tranne le classi prime che entreranno in maniera scaglionata
+                                secondo la scansione indicata in allegato</strong>.<br /> <a
+                                href="/j2/docs/2021-2022/orario_ita_13092021.pdf" target="_blank">Visualizza la
+                                comunicazione per le classi ITA</a></p>
+                        <h3>Orario dal 13 settembre 2021 plesso IPIA "G. Marchesini" e ITG "A. Bernini"</h3>
+                        <p><strong>Si comunica che il 13 settembre le lezioni inizieranno alle ore 8.00 e termineranno
+                                alle ore 12.00 per le Classi Seconde, Terze, Quarte, Quinte dell’IPIA e ITG</strong>.
+                            Gli alunni di tutte le classi dovranno raggiungere la propria aula/laboratorio utilizzando
+                            gli ingressi riportati nell'allegato.<br /> <strong>Gli studenti delle classi prime
+                                dell'IPIA e ITG il 13 settembre entreranno all'orario indicato nella comunicazione
+                                allegata.</strong><br /> <a href="/j2/docs/2021-2022/orario_prime_ip-itg_13092021.pdf"
+                                target="_blank">Visualizza la comunicazione per le classi prime IPIA e ITG</a><br /> <a
+                                href="/j2/docs/2021-2022/orario_ip-itg_13092021.pdf" target="_blank">Visualizza la
+                                comunicazione per le classi seconde, terze, quarte e quinte IPIA e ITG</a></p>
+                        <h3>Elenco alunni classi prime e terze AS 2021-2022</h3>
+                        <p>Si pubblicano gli elenchi delle studentesse e degli studenti delle <strong>classi prime e
+                                terze di tutti i plessi</strong> per l'A.S. 2021-2022<br /><a
+                                href="/j2/docs/2021-2022/classi_prime_as_2021-2022.pdf" target="_blank">Elenchi classi
+                                prime</a><br /> <a href="/j2/docs/2021-2022/classi_terze_as_2021-2022.pdf"
+                                target="_blank">Elenchi classi terze</a></p>
+                        <h3>Corso serale Istruzione degli Adulti A.S. 2021-2022</h3>
+                        <p>Si comunica che presso il nostro Istituto <strong>è possibile iscriversi ai corsi per adulti
+                                IdA di secondo livello</strong> finalizzati al conseguimento del diploma di istruzione
+                            tecnica per l’A.S. 2021/2022, inoltrando la domanda di iscrizione on-line.<br />Ci si può
+                            iscrivere al:</p>
+                        <ul>
+                            <li><strong>primo periodo didattico</strong>: primo e secondo anno (Biennio comune)</li>
+                            <li><strong>secondo periodo didattico</strong>: terzo e quarto anno (Meccanica, Informatica
+                                e Sistema Moda)</li>
+                            <li><strong>terzo periodo didattico</strong>: quinto anno (Meccanica, Informatica e Sistema
+                                Moda)</li>
+                        </ul>
+                        <p><a href="/j2/docs/2020-2021/serale/iscrizioni_corso_serale_2021-2022.pdf" target="_blank">Per
+                                maggiori informazioni scarica l'allegato</a><br /><a
+                                href="https://forms.gle/oXbtsXByGkGe4ink9" target="_blank">Modulo di iscrizione
+                                online<br /></a><a href="/j2/docs/2021-2022/locandina_ida.pdf" target="_blank">Scarica
+                                la locandina 1</a><br /> <a href="/j2/docs/2021-2022/locandina_ida.png"
+                                target="_blank">Scarica la locandina 2</a></p>
+                        <h3>Collegio dei Docenti</h3>
+                        <p>Il Collegio dei Docenti dell’IIS “Viola-Marchesini” è convocato in modalità <strong>a
+                                distanza mercoledì 8 settembre 2021 alle ore 9.30</strong></p>
+                        <h3>Calendario esami integrativi A.S. 2021-2022</h3>
+                        <p>Si pubblica il calendario degli esami integrativi per passaggi da altri istituti.<br /> <a
+                                href="/j2/docs/2021-2022/calendario_esami_integrativi.pdf" target="_blank">Scarica
+                                l'allegato</a></p>
+                        <h3>Elenchi classi A.S 2021-2022</h3>
+                        <p>GLi elenchi delle classi per l'A.S. 2021-2022 <strong>saranno pubblicati a partire da
+                                settembre.</strong></p>
+                        <h3>Differimento data apertura buste dell’avviso pubblico aperto/invito rivolto alle agenzie di
+                            assicurazione</h3>
+                        <p><strong>Differimento data apertura buste</strong> dell’avviso pubblico aperto/invito, alla
+                            presentazione di offerte rivolto alle agenzie di assicurazione per presentazione delle
+                            offerte per l’affidamento del servizio di<strong> assicurazione in favore degli alunni e del
+                                personale scolastico.</strong><br /> <a
+                                href="https://drive.google.com/drive/folders/1FjZu9Cqa222hLJIylh0B8xns0-7u1jnz?usp=sharing"
+                                target="_blank">Vedi comunicazione</a></p>
+                        <h3>Avviso pubblico aperto/invito rivolto alle agenzie di assicurazione</h3>
+                        <p>Avviso pubblico aperto/invito, alla presentazione di offerte rivolto alle agenzie di
+                            assicurazione per <strong>presentazione delle offerte per l’affidamento del servizio di
+                                assicurazione in favore degli alunni e del personale scolastico per gli anni 2021/2022,
+                                2022/2023, 2023/2024, con decorrenza dalle 00.00 del 01/09/2021 alle 24.00 del
+                                31/08/2024</strong>. <br /> <a
+                                href="https://drive.google.com/drive/folders/1FjZu9Cqa222hLJIylh0B8xns0-7u1jnz?usp=sharing"
+                                target="_blank">Scarica l'avviso e gli allegati</a></p>
+                        <h3>Perfezionamento Iscrizioni Classi Prime A.S. 2021-2022</h3>
+                        <p>Sono pubblicate le indicazioni per <strong>perfezionare l'iscrizione alle classi prime per
+                                l'A.S. 2021-2022.<br />Nota: </strong>a causa del cambio dell'ISTITUTO CASSIERE  i
+                            pagamenti del contributo volontario con PAGO IN RETE per le CLASSI PRIME A.S. 2021-2022
+                            potranno essere effettuati dall'11 Luglio.</p>
+                        <p><a href="/j2/docs/2021-2022/perfezionamento_iscrizioni.pdf" target="_blank">Scarica la
+                                comunicazione</a><br /> <a href="/j2/docs/2021-2022/manuale_pagamenti_scolastici.pdf"
+                                target="_blank">Scarica il manuale utenti pagamenti scolastici Pago in Rete</a></p>
+                        <h3>Libri di testo A.S. 2021-2022</h3>
+                        <p>Sono pubblicati i <strong>libri di testo per l'A.S. 2021-2022</strong> per tutti i quattro
+                            plessi.<br /><a href="/j2/genitori/libri-di-testo">Scarica la lista dei libri di testo
+                                2021-2022</a> </p>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="col-12" id="blocco">
+                   <div class="col-12" id="blocco">
                         <h3>Plessi</h3>
-                        <p id="plessi"><a href="#">I.I.S. "Viola-Marchesini"</a></p>
-                        <p id="plessi"><a href="#">ITA "O. Munerati"</a></p>
-                        <p id="plessi"><a href="#">ITG "A. Bernini"</a></p>
+                        <p id="plessi"><a href="home.html">I.I.S. "Viola-Marchesini"</a></p>
+                        <p id="plessi"><a href="http://www.agrariorovigo.it">ITA "O. Munerati"</a></p>
+                        <p id="plessi"><a href="http://www.itsgberninirovigo.it">ITG "A. Bernini"</a></p>
                     </div>
                     <div class="col-12" id="blocco">
                         <h3>Indirizzi di studio Settore Tecnico Tecnologico</h3>
-                        <p id="indirizzi"><a href="#">Biennio comune</a></p>
-                        <p id="indirizzi"><a href="#">Chimica, Materiali e Biotecnologie</a></p>
-                        <p id="indirizzi"><a href="#">Elettronica ed Elettrotecnica</a></p>
-                        <p id="indirizzi"><a href="#">Informatica e Telecomunicazioni</a></p>
-                        <p id="indirizzi"><a href="#">Meccanica, Meccatronica ed Energia</a></p>
-                        <p id="indirizzi"><a href="#">Sistema Moda</a></p>
-                        <p id="indirizzi"><a href="#">Istruzione degli Adulti</a></p>
-                        <p id="indirizzi"><a href="#">Agraria, Agroalimentare e Agroindustria (sede Munerati)</a></p>
-                        <p id="indirizzi"><a href="#">Costruzioni, Ambiente e Territorio (sede Bernini)</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/10-biennio-comune">Biennio comune</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/11-chimica-materiali-e-biotecnologie">Chimica, Materiali e Biotecnologie</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/12-elettronica-ed-elettrotecnica">Elettronica ed Elettrotecnica</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/13-informatica-e-telecomunicazioni">Informatica e Telecomunicazioni</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/14-meccanica-meccatronica-ed-energia">Meccanica, Meccatronica ed Energia</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/61-sistema-moda">Sistema Moda</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/92-corso-serale">Istruzione degli Adulti</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/140-agraria-agroalimentare-e-agroindustria">Agraria, Agroalimentare e Agroindustria (sede Munerati)</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/22-indirizzi-di-studio/indirizzi-di-studio-settore-tecnico-tecnologico/141-costruzioni-ambiente-e-territorio">Costruzioni, Ambiente e Territorio (sede Bernini)</a></p>
                     </div>
                     <div class="col-12" id="blocco">
                         <h3>Indirizzi di studio Settore Professionale</h3>
-                        <p id="indirizzi"><a href="#">Apparati, impianti e servizi tecnici industriali e civili</a></p>
-                        <p id="indirizzi"><a href="#">Manutenzione mezzi di trasporto</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/23-indirizzi-di-studio/indirizzi-di-studio-ipsia/75-apparati-impianti-e-servizi-tecnici-industriali-e-civili">Apparati, impianti e servizi tecnici industriali e civili</a></p>
+                        <p id="indirizzi"><a href="https://www.iisviolamarchesini.edu.it/j2/23-indirizzi-di-studio/indirizzi-di-studio-ipsia/76-manutenzione-mezzi-di-trasporto">Manutenzione mezzi di trasporto</a></p>
                     </div>
                     <div class="col-12" id="blocco">
                         <h3>PON FSE Studenti</h3>
                         <div id="blocco-immagine">
-                            <a href="#">
+                            <a href="https://sites.google.com/view/fse-v-m/home">
                                 <img src="pon_studenti.png" id="immagine" alt="">
                             </a>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -277,26 +720,34 @@
                                 <br>
                                 <div id="blocco-immagine">
                                     <img src="facial_mask.png" id="immagine" alt="">
-                                </div>                                
-                            </a>                            
+                                </div>
+                            </a>
                         </p>
+                    </div>
+                    <div class="col-12" id="blocco">
+                        <div class="google-maps" id="blocco-immagine">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.208896723236!2d11.794339015757462!3d45.0815568669144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477efa0be28ee4c1%3A0xecf32eb2f6aaa7c7!2sI.T.I.S.%20Ferruccio%20Viola!5e0!3m2!1sit!2sit!4v1630749156600!5m2!1sit!2sit"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div id="Fine-pagina">
-                    <br>IIS VIOLA-MARCHESINI Via A. De Gasperi, 21 Rovigo - Centralino Tel. 
-                    <a href="tel:0425410699">0425/410699</a> 
+                    <br>IIS VIOLA-MARCHESINI Via A. De Gasperi, 21 Rovigo - Centralino Tel.
+                    <a href="tel:0425410699">0425/410699</a>
                     Fax
                     <a href="fax:0425/35277">0425/35277</a></br>
                     <p>Email: <a href="mailto:rois012001@istruzione.it">rois012001@istruzione.it</a> Posta Elettronica
-                    Certificata <a href="mailto:rois012001@pec.istruzione.it">rois012001@pec.istruzione.it</a></p>
+                        Certificata <a href="mailto:rois012001@pec.istruzione.it">rois012001@pec.istruzione.it</a></p>
                     <p><a href="#">Dichiarazione di accessibilità</a></p>
                 </div>
             </div>
         </div>
     </div>
-    
+
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
